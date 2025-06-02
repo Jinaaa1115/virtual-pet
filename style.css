@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Comic Sans MS',cursive;
+  background-color: #73946B;
+  color:whitesmoke;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+}
+.mainbar{
+  position:fixed;
+  top:0;
+  left:0;
+  
+  right:0;
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;  
+  width:80%;
+  margin-top:60px;
+  align-items:center;
+  text-align: center;
+  gap:20px;
+}
+button{
+   width:200px;
+   padding:10px;
+   font-family:'Comic Sans MS',cursive;
+   text-transform: capitalize;
+   background-color: #537d5d;
+   border:none;
+   margin:10px;
+   border-radius:10px;
+   border:1px solid #537d5d;
+   color:white;
+   font-weight:bold;
+   font-size:14px;
+   transition:0.2s ease-in-out;
+}
+#feed:hover,#sleep:hover,#play:hover{
+  box-shadow: 0 0 5px #537d5d;
+}
+#pet-emotions{
+  font-size:22px;
+  font-weight:bold;
+  border:1px solid #d2d0a0;
+  margin-bottom:20px;
+  
+}
+button:hover{
+  color:#537d5d;
+  background-color:#d2d0a0;
+   
+  transform: scale(1.02);
+  box-shadow: 0 0 5px #d2d0a0;
+}
+#pet-container{
+  display:none;
+  background-color: #d2d0a0;
+  padding:20px;
+  border-radius:20px;
+  margin-top: 60px;
+  gap:0
+}
+img{
+  width:150px;
+  height:150px;
+  transition:0.5s ease-in-out;
+  
+}
+.pet-status{
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  gap:20px;
+  padding:20px;
+  border-radius:15px;
+  background-color: floralwhite;
+  box-shadow:0 0 5px rgba(0,0,0,0.1);
+  font-family:'Comic Sans MS',cursive;
+  margin-bottom:20px;
+  
+}
+@media screen and (max-width:768px){
+  .pet-status{
+    grid-template-columns:300px;
+  }
+}
+@media screen and (max-width:480px){
+  body{
+    color:#537d5d;
+    background-color:#d2d0a0;
+    
+  }
+  button:hover{
+    box-shadow:0 0 5px #537d5d;
+  }
+  #pet-container{
+    padding:8px;
+    width:95%;
+    
+  }
+  #sleep,#feed,#play{
+    width:150px
+}
+}
+.status{
+  margin-bottom:15px;
+}
+.label{
+  font-size:16px;
+  margin-bottom:5px;
+  display:block;
+  color:#537d5d;
+}
+.bar-container{
+  width:100%;
+  height:15px;
+  background:#d2d0a0;
+  border-radius:10px;
+  overflow:hidden;
+}
+.bar{
+  height:100%;
+  background:linear-gradient(to right,#537d5d,#73996a);
+  width:80%;
+  transition:width 0.3s ease;
+  border-radius:10px;
+}

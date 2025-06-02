@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Pet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="mainbar" id="mainbar">
+    <h1>Virtual Pet</h1>
+  </div>
+  <div class="container" id="main-container">
+    <h2 class="main-heading">Hii there, friend! I've been waiting for someone like you to take care of me! Will you be my best buddy?</h2>
+    <button id="start">Let's start</button>
+  </div>
+  <div class="container" id="pet-container">
+    <img src="Images/hello.png" id="image-holder">
+    <p id="pet-emotions">I'm happy that you came!!</p>
+    <div class="pet-status">
+      <div class="status">
+        <span class="label">Hunger</span>
+        <div class="bar-container">
+          <div class="bar" id="hunger-bar"></div>
+        </div>
+      </div>
+      <div class="status">
+        <span class="label">Happiness</span>
+        <div class="bar-container">
+          <div class="bar" id="happiness-bar"></div>
+        </div>
+      </div>
+      <div class="status">
+        <span class="label">Energy</span>
+        <div class="bar-container">
+          <div class="bar" id="energy-bar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button id="feed">Feed Me!</button>
+      <button id="play">Play With Me!</button>
+      <button id="sleep">Nap Time!</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
